@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'application'
+}
+
+group 'com.petrokhovrashchuk.petprojects'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.jsoup:jsoup:1.21.1")
+    implementation("com.google.dagger:dagger:2.57.1")
+    annotationProcessor("com.google.dagger:dagger-compiler:2.57.1")
+
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.13.4")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.13.4")
+    testImplementation("org.junit.platform:junit-platform-launcher:1.13.4")
+    testImplementation("org.assertj:assertj-core:3.27.4")
+    testImplementation("org.mockito:mockito-core:5.19.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:5.19.0")
+    testImplementation("com.google.dagger:dagger:2.57.1")
+    testImplementation("com.google.jimfs:jimfs:1.3.1")
+    testAnnotationProcessor("com.google.dagger:dagger-compiler:2.57.1")
+}
+
+application {
+    mainClass = 'com.petrokhovrashchuk.petprojects.HtmlToInputFormatTransformer'
+    applicationName = 'html-to-input-format-transformer'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        // Show standard output and error streams
+        showStandardStreams = true
+
+        // Optionally, configure what events to show
+        events "passed", "skipped", "failed"
+    }
+}
