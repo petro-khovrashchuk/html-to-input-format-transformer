@@ -1,14 +1,16 @@
 package com.petrokhovrashchuk.petprojects.utils;
 
-import java.io.IOException;
-
 public class Helper {
 
   private static final String ROOT_PATH = "/";
 
-  public static String readClassPathFile(final String file) throws IOException {
-    final byte[] bytes = Helper.class.getResourceAsStream(ROOT_PATH + file).readAllBytes();
-    return new String(bytes);
+  public static String readClassPathFile(final String file) {
+    try (var is = Helper.class.getResourceAsStream(ROOT_PATH + file)) {
+      final byte[] bytes = is.readAllBytes();
+      return new String(bytes);
+    } catch (Exception e) {
+      throw new IllegalArgumentException("Could not read file");
+    }
   }
 
 }

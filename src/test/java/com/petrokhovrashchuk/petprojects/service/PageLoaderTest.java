@@ -1,25 +1,20 @@
 package com.petrokhovrashchuk.petprojects.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.testng.Assert.assertThrows;
 
+import com.petrokhovrashchuk.petprojects.di.DaggerServicesComponent;
 import com.petrokhovrashchuk.petprojects.exception.DocumentNotLoadedException;
 import com.petrokhovrashchuk.petprojects.utils.Helper;
 import com.petrokhovrashchuk.petprojects.utils.TestServer;
-import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
 import java.util.stream.Collectors;
-import org.jsoup.Connection;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-@ExtendWith(MockitoExtension.class)
-class PageLoaderTest {
+public class PageLoaderTest {
 
   private static final String LOCAL_FILE_NAME = "testIndex.html";
   private static final String PATH_DELIMITER = "/";
@@ -28,22 +23,18 @@ class PageLoaderTest {
 
   private final PageLoader pageLoader = DaggerServicesComponent.create().buildPageLoader();
 
-  @Mock
-  private Connection connection;
-
-
-  @BeforeAll
+  @BeforeClass
   static void init() throws Exception {
     testServer.init();
   }
 
-  @AfterAll
+  @AfterClass
   static void tearDown() {
     testServer.tearDown();
   }
 
   @Test
-  void load_whenCalledWithValidUrl_shouldSuccessfullyLoadPage() throws Exception {
+  public void load_whenCalledWithValidUrl_shouldSuccessfullyLoadPage() throws Exception {
     // Arrange
     final URL url = testServer.getUri().toURL();
 
@@ -64,14 +55,14 @@ class PageLoaderTest {
   }
 
   @Test
-  void load_whenCalledWithInvalidUrl_shouldThrowExpectedException() {
+  public void load_whenCalledWithInvalidUrl_shouldThrowExpectedException() {
     // Arrange
     final URI invalidUri = testServer.getUri().resolve(PATH_DELIMITER + INVALID);
     final String expectedMessage = "Exception during connection";
 
     // Act & Assert
-    assertThrows(DocumentNotLoadedException.class, () -> pageLoader.load(invalidUri.toURL()),
-        expectedMessage);
+    assertThrows(expectedMessage, DocumentNotLoadedException.class,
+        () -> pageLoader.load(invalidUri.toURL()));
   }
 
 }
