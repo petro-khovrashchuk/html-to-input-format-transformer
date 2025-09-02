@@ -3,17 +3,14 @@ package com.petrokhovrashchuk.petprojects.service;
 import com.petrokhovrashchuk.petprojects.exception.DocumentNotLoadedException;
 import jakarta.inject.Inject;
 import java.net.URL;
+import lombok.AllArgsConstructor;
 import org.jsoup.Connection;
 import org.jsoup.nodes.Document;
 
+@AllArgsConstructor(onConstructor_ = {@Inject})
 public class PageLoaderImpl implements PageLoader {
 
   private final Connection connection;
-
-  @Inject
-  public PageLoaderImpl(final Connection connection) {
-    this.connection = connection;
-  }
 
   @Override
   public String load(final URL url) {

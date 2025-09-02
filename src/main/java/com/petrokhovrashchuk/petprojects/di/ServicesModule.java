@@ -1,4 +1,4 @@
-package com.petrokhovrashchuk.petprojects.service;
+package com.petrokhovrashchuk.petprojects.di;
 
 import dagger.Module;
 import dagger.Provides;
