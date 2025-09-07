@@ -59,7 +59,7 @@ public class GeeksForGeeksPagesTransformerImpl implements Transformer {
       } else if (element.elementSiblingIndex() < firstQuestion.elementSiblingIndex()) {
         element.remove();
       } else {
-        Element answer = questionsToAnswers.lastEntry().getValue();
+        final Element answer = questionsToAnswers.lastEntry().getValue();
         answer.appendChild(element.clone());
         element.replaceWith(answer);
       }
@@ -74,14 +74,14 @@ public class GeeksForGeeksPagesTransformerImpl implements Transformer {
     return cleanQuestionToAnswer;
   }
 
-  private void cleanUpQuestions(Map<Element, Element> questionToAnswer) {
+  private void cleanUpQuestions(final Map<Element, Element> questionToAnswer) {
     for (Element element : questionToAnswer.keySet()) {
       swapHeadElementWithParagraph(element);
       cleanUpSpanWithoutAttributes(questionToAnswer.keySet(), element);
     }
   }
 
-  private void cleanUpAnswers(Map<Element, Element> questionToAnswer) {
+  private void cleanUpAnswers(final Map<Element, Element> questionToAnswer) {
     for (Element element : questionToAnswer.values()) {
       cleanUpSpanWithoutAttributes(questionToAnswer.values(), element);
       cleanUpImage(element);
@@ -103,7 +103,7 @@ public class GeeksForGeeksPagesTransformerImpl implements Transformer {
     }
   }
 
-  private void cleanUpImage(Element element) {
+  private void cleanUpImage(final Element element) {
     element.forEachNode(node -> {
       if (isNodeEqual(node, IMG, SRCSET)) {
         setSourceLargestImageLink(node);
@@ -114,8 +114,8 @@ public class GeeksForGeeksPagesTransformerImpl implements Transformer {
   }
 
   private void setSourceLargestImageLink(final Node imageNode) {
-    final String srcset = imageNode.attr(SRCSET);
-    final String link = getLinkForLargestImage(srcset);
+    final String srcsetValue = imageNode.attr(SRCSET);
+    final String link = getLinkForLargestImage(srcsetValue);
     imageNode.attr(SRC, link);
   }
 
@@ -158,13 +158,6 @@ public class GeeksForGeeksPagesTransformerImpl implements Transformer {
   private boolean isCodeNodeForRemoval(final Node node) {
     return isNodeEqual(node, TEMPLATE, SHADOWROOTMODE, OPEN)
         || isNodeEqual(node, GFG_TAB, ID, GFG_TAB_GENERATED_0);
-  }
-
-  private boolean hasAttribute(
-      final Node node,
-      final String attributeName,
-      final String attributeValue) {
-    return node.hasAttr(attributeName) && attributeValue.equals(node.attr(attributeName));
   }
 
   private boolean isNodeEqual(final Node node,
