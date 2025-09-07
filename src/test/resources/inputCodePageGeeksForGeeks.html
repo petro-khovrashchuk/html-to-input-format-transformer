@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+<div id="main" class="wrapper single-page">
+  <div class="container-fluid bg-light" id="home-page" style="position: relative; max-width:100%;">
+    <div class="article-page_flex">
+      <div class="leftBar">
+        <div class="article--viewer">
+          <div class="article--viewer_content">
+            <div class="a-wrapper">
+              <article>
+                <h3 id="1-what-are-the-default-values-assigned-to-variables-and-instances-in-java"
+                    style="text-align:left"><span>24. What are the default values assigned to variables and instances
+                        in Java?</span></h3>
+                <p dir="ltr"><span>In Java When we haven’t initialized the instance variables then the compiler
+                        initializes them with default values. The default values for instances and variables depend on
+                        their data types. Some common types of default data types are:</span></p>
+                <ul>
+                  <li value="1"><span>The default value for numeric types (byte, short, int, long, float, and
+                          double) is 0.</span></li>
+                  <li value="2"><span>The default value for the boolean type is false.</span></li>
+                  <li value="3"><span>The default value for object types (classes, interfaces, and arrays) is
+                          null.</span></li>
+                  <li value="4"><span>The null character, "u0000, " is the default value for the char type.</span>
+                  </li>
+                </ul>
+                <p dir="ltr"><b><strong>Example:</strong></b></p>
+                <gfg-tabs data-run-ide="true" data-mode="dark"
+                          role="tablist">
+                  <template shadowrootmode="open">
+                    <style class="darkreader darkreader--inline" media="screen">
+                      [data-darkreader-inline-bgcolor] {
+                        background-color: var(--darkreader-inline-bgcolor) !important;
+                      }
+
+                      [data-darkreader-inline-bgimage] {
+                        background-image: var(--darkreader-inline-bgimage) !important;
+                      }
+
+                      [data-darkreader-inline-border] {
+                        border-color: var(--darkreader-inline-border) !important;
+                      }
+
+                      [data-darkreader-inline-border-bottom] {
+                        border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+                      }
+
+                      [data-darkreader-inline-border-left] {
+                        border-left-color: var(--darkreader-inline-border-left) !important;
+                      }
+
+                      [data-darkreader-inline-border-right] {
+                        border-right-color: var(--darkreader-inline-border-right) !important;
+                      }
+
+                      [data-darkreader-inline-border-top] {
+                        border-top-color: var(--darkreader-inline-border-top) !important;
+                      }
+
+                      [data-darkreader-inline-boxshadow] {
+                        box-shadow: var(--darkreader-inline-boxshadow) !important;
+                      }
+
+                      [data-darkreader-inline-color] {
+                        color: var(--darkreader-inline-color) !important;
+                      }
+
+                      [data-darkreader-inline-fill] {
+                        fill: var(--darkreader-inline-fill) !important;
+                      }
+
+                      [data-darkreader-inline-stroke] {
+                        stroke: var(--darkreader-inline-stroke) !important;
+                      }
+
+                      [data-darkreader-inline-outline] {
+                        outline-color: var(--darkreader-inline-outline) !important;
+                      }
+
+                      [data-darkreader-inline-stopcolor] {
+                        stop-color: var(--darkreader-inline-stopcolor) !important;
+                      }
+
+                      [data-darkreader-inline-bg] {
+                        background: var(--darkreader-inline-bg) !important;
+                      }
+
+                      [data-darkreader-inline-border-short] {
+                        border: var(--darkreader-inline-border-short) !important;
+                      }
+
+                      [data-darkreader-inline-border-bottom-short] {
+                        border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+                      }
+
+                      [data-darkreader-inline-border-left-short] {
+                        border-left: var(--darkreader-inline-border-left-short) !important;
+                      }
+
+                      [data-darkreader-inline-border-right-short] {
+                        border-right: var(--darkreader-inline-border-right-short) !important;
+                      }
+
+                      [data-darkreader-inline-border-top-short] {
+                        border-top: var(--darkreader-inline-border-top-short) !important;
+                      }
+
+                      [data-darkreader-inline-invert] {
+                        filter: invert(100%) hue-rotate(180deg);
+                      }
+                    </style>
+                    <style class="darkreader darkreader--override" media="screen">
+                      .vimvixen-hint {
+                        background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+                        border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+                        color: var(--darkreader-text-302505, #d7d4cf) !important;
+                      }
+
+                      #vimvixen-console-frame {
+                        color-scheme: light !important;
+                      }
+
+                      ::placeholder {
+                        opacity: 0.5 !important;
+                      }
+
+                      #edge-translate-panel-body,
+                      .MuiTypography-body1,
+                      .nfe-quote-text {
+                        color: var(--darkreader-neutral-text) !important;
+                      }
+
+                      gr-main-header {
+                        background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+                      }
+
+                      .tou-z65h9k,
+                      .tou-mignzq,
+                      .tou-1b6i2ox,
+                      .tou-lnqlqk {
+                        background-color: var(--darkreader-neutral-background) !important;
+                      }
+
+                      .tou-75mvi {
+                        background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+                      }
+
+                      .tou-ta9e87,
+                      .tou-1w3fhi0,
+                      .tou-1b8t2us,
+                      .tou-py7lfi,
+                      .tou-1lpmd9d,
+                      .tou-1frrtv8,
+                      .tou-17ezmgn {
+                        background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+                      }
+
+                      .tou-uknfeu {
+                        background-color: var(--darkreader-background-faedda, #432c09) !important;
+                      }
+
+                      .tou-6i3zyv {
+                        background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+                      }
+
+                      div.mermaid-viewer-control-panel .btn {
+                        background-color: var(--darkreader-neutral-background);
+                        fill: var(--darkreader-neutral-text);
+                      }
+
+                      svg g rect.er {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      svg g rect.er.entityBox {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      svg g rect.er.attributeBoxOdd {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      svg g rect.er.attributeBoxEven {
+                        fill: var(--darkreader-selection-background);
+                        fill-opacity: 0.8 !important;
+                      }
+
+                      svg rect.er.relationshipLabelBox {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      svg g g.nodes rect,
+                      svg g g.nodes polygon {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      svg g rect.task {
+                        fill: var(--darkreader-selection-background) !important;
+                      }
+
+                      svg line.messageLine0,
+                      svg line.messageLine1 {
+                        stroke: var(--darkreader-neutral-text) !important;
+                      }
+
+                      div.mermaid .actor {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      mitid-authenticators-code-app>.code-app-container {
+                        background-color: white !important;
+                        padding-top: 1rem;
+                      }
+
+                      iframe#unpaywall[src$="unpaywall.html"] {
+                        color-scheme: light !important;
+                      }
+
+                      select {
+                        --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+                      }
+
+                      select * {
+                        background-color: var(--darkreader-neutral-background) !important;
+                      }
+
+                      body#tumblr {
+                        --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+                        --darkreader-bg--white: 23, 23, 23 !important;
+                        --darkreader-text--black: 228, 224, 218 !important;
+                      }
+
+                      :host {
+                        --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+                        --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+                        --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+                        --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+                        --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+                        --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+                        --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+                        --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+                        --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+                        --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+                      }
+
+                      :host([_floating]) .d2l-floating-buttons-container {
+                        background-color: var(--darkreader-neutral-background) !important;
+                        border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+                        opacity: 0.88 !important;
+                      }
+
+                      d2l-card {
+                        background: var(--darkreader-neutral-background) !important;
+                        border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+                      }
+
+                      d2l-dropdown-content>div,
+                      d2l-menu-item {
+                        background-color: var(--darkreader-neutral-background) !important;
+                        border-radius: 10px !important;
+                      }
+
+                      d2l-empty-state-simple {
+                        border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+                      }
+
+                      .d2l-button-filter>ul>li>a.vui-button {
+                        border-color: var(--darkreader-border--d2l-color-mica) !important;
+                      }
+
+                      .d2l-label-text:has(.d2l-button-subtle-content):hover,
+                      .d2l-label-text:has(.d2l-button-subtle-content):focus,
+                      .d2l-label-text:has(.d2l-button-subtle-content):active {
+                        background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+                      }
+
+                      .d2l-navigation-centerer {
+                        color: inherit !important;
+                      }
+
+                      .d2l-tabs-layout {
+                        border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+                      }
+
+                      .d2l-input,
+                      .d2l-calendar-date,
+                      .d2l-htmleditor-container {
+                        background-color: var(--darkreader-neutral-background) !important;
+                      }
+
+                      .d2l-collapsible-panel {
+                        border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+                        border-radius: 0.4rem !important;
+                      }
+
+                      .d2l-collapsible-panel-divider {
+                        border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+                      }
+
+                      .d2l-w2d-flex {
+                        border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+                      }
+
+                      .d2l-collapsible-panel scrolled,
+                      .d2l-collapsible-panel-header,
+                      .d2l-w2d-collection-fixed {
+                        background-color: var(--darkreader-neutral-background) !important;
+                      }
+
+                      .d2l-loading-spinner-bg {
+                        fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+                      }
+
+                      .d2l-loading-spinner-bg-stroke {
+                        stroke: var(--darkreader-border--d2l-color-mica) !important;
+                      }
+
+                      .d2l-loading-spinner-wrapper svg path,
+                      .d2l-loading-spinner-wrapper svg circle {
+                        fill: var(--darkreader-neutral-background) !important;
+                      }
+
+                      embed[type="application/pdf"][src="about:blank"] {
+                        filter: invert(100%) contrast(90%);
+                      }
+
+                      .gsc-input-box {
+                        box-shadow: var(--darkreader-text-0000004d, rgba(232, 230, 227, 0.3)) 0px 0px 2px !important;
+                      }
+                    </style>
+                    <style class="darkreader darkreader--invert" media="screen">
+                      .jfk-bubble.gtx-bubble,
+                      .captcheck_answer_label>input+img,
+                      span#closed_text>img[src^="https://www.gstatic.com/images/branding/googlelogo"],
+                      span[data-href^="https://www.hcaptcha.com/"]>#icon,
+                      img.Wirisformula,
+                      a[data-testid="headerMediumLogo"]>svg,
+                      .d2l-navigation-link-image-container,
+                      .d2l-iframe-loading-container {
+                        filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+                      }
+                    </style>
+                    <style>
+                      :host {
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
+
+                      ::slotted(gfg-panel) {
+                        flex-basis: 100%;
+                      }
+
+                      .codeblock-container[data-content]::after,
+                      .codeblock-container[data-danger-content]::after {
+                        content: attr(data-content);
+                        display: block;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0;
+                        padding: 4px 12px;
+                        font-size: 12px;
+                        letter-spacing: 0.05em;
+                        font-family: inherit;
+                        background-color: rgb(217, 217, 217);
+                        color: #424242 !important;
+                      }
+
+                      .codeblock-container[data-danger-content]::after {
+                        color: rgb(132, 5, 5) !important;
+                        content: attr(data-danger-content);
+                      }
+
+                      .codeblock-container {
+                        position: relative;
+                        width: 100%;
+                        font-family: sans-serif;
+                      }
+
+                      .code-container {
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid #ddd;
+                        clear: left;
+                      }
+
+                      #slot-panel::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        background-color: transparent;
+                        width: 0px !important;
+                      }
+
+                      #slot-panel::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        background-color: #999;
+                        width: 5px;
+                      }
+
+                      #slot-panel::-webkit-scrollbar {
+                        width: 5px;
+                      }
+
+                      #slot-panel::-webkit-scrollbar-thumb:hover {
+                        cursor: pointer;
+                      }
+
+                      .editor-buttons-div,
+                      .w-56 {
+                        min-width: 46px;
+                      }
+
+                      .editor-buttons-div {
+                        display: flex;
+                        margin-left: auto;
+                        height: 40px;
+                        position: sticky;
+                        position: -webkit-sticky;
+                        top: 60px;
+                        z-index: 4;
+                        width: fit-content;
+                        justify-content: flex-end;
+                        align-items: start;
+                      }
+
+                      .gfg-code {
+                        padding: 0;
+                        width: 100%;
+                        display: block;
+                      }
+
+                      .editor-buttons {
+                        display: flex;
+                        width: fit-content;
+                        gap: 8px;
+                        margin-top: 8px;
+                        padding-right: 11px;
+                        position: relative;
+                        margin-bottom: 4px;
+                      }
+
+                      .editor-buttons.output-box {
+                        margin-top: 0px;
+                      }
+
+                      .editor-buttons.output-box button {
+                        margin-bottom: 0 !important;
+                      }
+
+                      .output-box {
+                        margin-left: 8px;
+                      }
+
+                      .code-button {
+                        background: white;
+                        margin-bottom: 10px;
+                        border: 2px;
+                        background: #e5e5e5;
+                        border-radius: 50px;
+                        width: 28px !important;
+                        height: 28px !important;
+                        cursor: pointer;
+                        padding: 6px;
+                      }
+
+                      #expand-code-button {
+                        margin-bottom: 0px;
+                      }
+
+                      #expand-driver-code {
+                        transform: rotate(90deg);
+                        transform-origin: center;
+                      }
+
+                      .code-output {
+                        background: #efefef;
+                        border-radius: 8px;
+                        width: 100%;
+                        margin: 10px 2px 5px 2px;
+                      }
+
+                      .close-output-button {
+                        margin-bottom: 10px;
+                      }
+
+                      .code-output-content {
+                        padding: 8px 16px;
+                        margin: 0;
+                        position: sticky;
+                        position: -webkit-sticky;
+                        margin-top: 10px;
+                      }
+
+                      .code-box {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative !important;
+                      }
+
+                      .code-output-box {
+                        display: flex;
+                        align-items: center;
+                      }
+
+                      .compiled-message-box {
+                        background-color: #308d46;
+                        border-radius: 6px;
+                        color: white;
+                        width: fit-content;
+                        margin: 10px auto;
+                        text-align: center;
+                        flex-basis: 100%;
+                        display: none;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 700;
+                        padding-inline: 10px;
+                      }
+
+                      .compiled-message-box p {
+                        margin-block: 5px;
+                      }
+
+                      .compiled-message-box-active {
+                        display: flex;
+                      }
+
+                      .compiled-mess-content {
+                        font-size: 10px;
+                        padding-left: 5px;
+                      }
+
+                      .generated-output {
+                        font-size: 15px;
+                        white-space: pre-wrap;
+                      }
+
+                      .row-output {
+                        color: black;
+                        font-size: 16px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        margin-top: -12px;
+                        margin-bottom: -5x;
+                      }
+
+                      .border {
+                        width: 28px !important;
+                        height: 28px !important;
+                        position: absolute;
+                        background: transparent;
+                        border-radius: 50%;
+                        border: 2px dashed #000;
+                        margin-left: -8px;
+                        margin-top: -7px;
+                        animation-name: rotate;
+                        animation-duration: 5s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                      }
+
+                      .codeblock-container[data-mode=dark] .border {
+                        border-color: white !important;
+                      }
+
+                      #icon-tabler-copy {
+                        margin-bottom: -4px;
+                        cursor: pointer;
+                      }
+
+                      .gfg-icon {
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block !important;
+                      }
+
+                      @keyframes rotate {
+                        from {
+                          transform: rotate(-360deg);
+                        }
+
+                        to {
+                          transform: rotate(360deg);
+                        }
+                      }
+
+                      #code-output-element #jsFrame {
+                        background-color: transparent;
+                        border: unset;
+                        width: 100%;
+                      }
+
+                      .loading-container.active {
+                        width: 150px;
+                        height: 50px;
+                        background-color: lightgrey;
+                        opacity: 70%;
+                        color: black;
+                        position: absolute;
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+                        top: 30%;
+                        left: 40%;
+                        z-index: 1;
+                        white-space: nowrap !important;
+                        text-align: center;
+                        font-size: 13px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        margin: 2rem;
+                      }
+
+                      .loading-container {
+                        display: none;
+                      }
+
+                      .playground-loading {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                      }
+
+                      @media screen and (max-width: 700px) {
+                        .editor-buttons-div {
+                          position: sticky;
+                          top: 10px;
+                          z-index: 4;
+                          width: fit-content;
+                          margin-left: auto;
+                          height: 38px;
+                          padding-right: 5px;
+                        }
+
+                        .editor-buttons {
+                          display: flex;
+                          width: fit-content;
+                          flex-direction: row;
+                          gap: 8px;
+                        }
+
+                        .code-box {
+                          position: relative;
+                          flex-direction: column;
+                        }
+
+                        .code-button {
+                          cursor: pointer;
+                          transition: all 0.2s ease;
+                        }
+
+                        .compiled-message-box svg {
+                          display: none;
+                        }
+                      }
+
+                      @media screen and (max-width: 375px) {
+                        .compiled-message-box {
+                          margin-inline: 5px;
+                        }
+                      }
+                    </style>
+                    <style class="darkreader darkreader--sync" media="screen"></style>
+
+                    <div class="codeblock-container" data-mode="dark">
+                      <slot name="tab"></slot>
+                      <div class="code-container">
+                        <div class="code-box">
+                          <div id="editor-buttons-div" class="editor-buttons-div"
+                               style="top: 40px;">
+                            <div id="editor-buttons" class="editor-buttons">
+                              <button id="expand-driver-code" class="expand-driver-code code-button"
+                                      title="Expand all Diver Codes" style="display: none;">
+                                <svg id="expand-icon"
+                                     width="17" height="17" viewBox="1 5 47 6" stroke-width="1"
+                                     stroke="#2c3e50"
+                                     fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     data-darkreader-inline-stroke=""
+                                     style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                  <path
+                                      d="M44.4507 7.91963C44.7062 8.18159 44.8496 8.53199 44.8496 8.89419C44.8496 9.25639 44.7062 9.60088 44.4507 9.8523L38.9862 15.2053C38.8593 15.3296 38.7087 15.4272 38.5429 15.4924C38.3771 15.5577 38.1995 15.5894 38.02 15.5857C37.6577 15.5782 37.3101 15.427 37.0539 15.1655C36.7977 14.9039 36.6537 14.5533 36.6537 14.1909C36.6537 13.8284 36.7977 13.4838 37.0539 13.2328L40.1862 10.1645L30.3697 9.96203C30.0073 9.95456 29.6599 9.80343 29.4037 9.54189C29.1475 9.28035 29.0035 8.92983 29.0035 8.56743C29.0035 8.20503 29.1475 7.86044 29.4037 7.60947C29.6599 7.3585 30.0073 7.22171 30.3697 7.22918L40.1862 7.4316L37.0539 4.23407C36.927 4.10455 36.8264 3.95182 36.7577 3.7846C36.6891 3.61738 36.6537 3.43894 36.6537 3.25948C36.6537 3.08001 36.6891 2.90304 36.7577 2.73865C36.8264 2.57426 36.927 2.42568 37.0539 2.30139C37.1808 2.17711 37.3314 2.07955 37.4972 2.01429C37.6629 1.94903 37.8406 1.91735 38.02 1.92105C38.1995 1.92475 38.3771 1.96376 38.5429 2.03586C38.7087 2.10795 38.8593 2.21172 38.9862 2.34124L44.4507 7.91963Z"
+                                      fill="black" data-darkreader-inline-fill=""
+                                      style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);">
+                                  </path>
+                                  <rect x="24.5859" y="16.8309" width="3.31306" height="16.5653"
+                                        rx="1.65653"
+                                        transform="rotate(-180 24.5859 16.8309)" fill="black"
+                                        data-darkreader-inline-fill=""
+                                        style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);">
+                                  </rect>
+                                  <path
+                                      d="M0.884258 7.91957C0.62878 8.18152 0.485352 8.53193 0.485352 8.89413C0.485352 9.25632 0.62878 9.60082 0.884258 9.85224L6.3488 15.2053C6.47567 15.3295 6.6263 15.4271 6.79207 15.4924C6.95783 15.5576 7.1355 15.5893 7.31493 15.5856C7.6773 15.5781 8.02483 15.427 8.28106 15.1654C8.5373 14.9038 8.68125 14.5533 8.68125 14.1908C8.68125 13.8284 8.5373 13.4837 8.28106 13.2327L5.14879 10.1644L14.9653 9.96197C15.3276 9.9545 15.6751 9.80337 15.9313 9.54183C16.1875 9.28029 16.3314 8.92977 16.3314 8.56737C16.3314 8.20497 16.1875 7.86038 15.9313 7.60941C15.6751 7.35844 15.3276 7.22164 14.9653 7.22912L5.14879 7.43154L8.28106 4.23401C8.40794 4.10449 8.50858 3.95176 8.57724 3.78454C8.64591 3.61732 8.68125 3.43888 8.68125 3.25942C8.68125 3.07995 8.64591 2.90298 8.57724 2.73859C8.50858 2.5742 8.40794 2.42562 8.28106 2.30133C8.15419 2.17705 8.00357 2.07949 7.8378 2.01423C7.67203 1.94897 7.49436 1.91729 7.31493 1.92099C7.1355 1.92469 6.95783 1.9637 6.79207 2.03579C6.6263 2.10789 6.47567 2.21166 6.3488 2.34118L0.884258 7.91957Z"
+                                      fill="black" data-darkreader-inline-fill=""
+                                      style="--darkreader-inline-fill: var(--darkreader-text-000000, #e8e6e3);">
+                                  </path>
+                                </svg>
+                              </button>
+                              <button class="code-button" id="edit-close-button"
+                                      title="Close Editor"
+                                      buttontype="edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="edit-close-icon"
+                                     class="gfg-icon" width="17" height="17" viewBox="0 0 24 24"
+                                     stroke-width="2.0"
+                                     stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                     stroke-linejoin="round"
+                                     data-darkreader-inline-stroke=""
+                                     style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                                        data-darkreader-inline-stroke=""
+                                        style="--darkreader-inline-stroke: none;"></path>
+                                  <path d="M18 6l-12 12"></path>
+                                  <path d="M6 6l12 12"></path>
+                                </svg>
+                              </button>
+                              <button class="code-button" id="run-code-button"
+                                      title="Run Code and See Output">
+                                <div class="border" id="run-code-loader" hidden=""></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="17"
+                                     height="17"
+                                     viewBox="0 0 24 24" stroke-width="2.0" stroke="#2c3e50"
+                                     fill="none"
+                                     stroke-linecap="round" stroke-linejoin="round"
+                                     data-darkreader-inline-stroke=""
+                                     style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                                        data-darkreader-inline-stroke=""
+                                        style="--darkreader-inline-stroke: none;"></path>
+                                  <path d="M7 4v16l13 -8z"></path>
+                                </svg>
+                              </button>
+                              <button class="code-button" id="copy-code-button" title="Copy Code">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="17"
+                                    height="17"
+                                    viewBox="0 0 24 24" stroke-width="2.0" stroke="#2c3e50"
+                                    fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    data-darkreader-inline-stroke=""
+                                    style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                                        data-darkreader-inline-stroke=""
+                                        style="--darkreader-inline-stroke: none;"></path>
+                                  <path
+                                      d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z">
+                                  </path>
+                                  <path
+                                      d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                                </svg>
+                              </button>
+                              <button class="code-button" id="mode-button" title="Light Mode"
+                                      hidden="true"
+                                      mode="dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="20"
+                                     height="20" viewBox="0 0 24 24" stroke-width="1.5"
+                                     stroke="#2c3e50" fill="none"
+                                     stroke-linecap="round" stroke-linejoin="round"
+                                     data-darkreader-inline-stroke=""
+                                     style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                                        data-darkreader-inline-stroke=""
+                                        style="--darkreader-inline-stroke: none;"></path>
+                                  <path
+                                      d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
+                                  <path d="M6.343 17.657l-1.414 1.414"></path>
+                                  <path d="M6.343 6.343l-1.414 -1.414"></path>
+                                  <path d="M17.657 6.343l1.414 -1.414"></path>
+                                  <path d="M17.657 17.657l1.414 1.414"></path>
+                                  <path d="M4 12h-2"></path>
+                                  <path d="M12 4v-2"></path>
+                                  <path d="M20 12h2"></path>
+                                  <path d="M12 20v2"></path>
+                                </svg>
+                              </button>
+
+                            </div>
+                          </div>
+                          <div id="slot-panel" class="gfg-code"
+                               style="width: calc(100% + 0px); margin-top: -35px;">
+                            <div id="playground-loader" class="loading-container">
+                              <span class="playground-loading">Loading Playground...</span>
+                            </div>
+                            <slot name="panel"></slot>
+                          </div>
+                        </div>
+                        <div class="code-output-box" id="code-output-box">
+                          <div class="editor-buttons w-56 output-box" title="Close Output">
+                            <button class="code-button" id="close-output-button" hidden="">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="gfg-icon" width="17"
+                                   height="17"
+                                   viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+                                   fill="none"
+                                   stroke-linecap="round" stroke-linejoin="round"
+                                   data-darkreader-inline-stroke=""
+                                   style="--darkreader-inline-stroke: var(--darkreader-text-2c3e50, #aec2d3);">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                                      data-darkreader-inline-stroke=""
+                                      style="--darkreader-inline-stroke: none;"></path>
+                                <path
+                                    d="M9 12h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v6h-6v-6z">
+                                </path>
+                                <path d="M9 21h6"></path>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="code-output" id="code-output" hidden="">
+                            <div class="row-output">
+                              <pre class="generated-output" id="code-output-element"></pre>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </template>
+                  <gfg-tab slot="tab" hidden="" role="tab" id="gfg-tab-generated-0"
+                           aria-selected="true"
+                           tabindex="0" aria-controls="gfg-panel-generated-0" selected="">Java
+                  </gfg-tab>
+                  <gfg-panel slot="panel" data-code-lang="java" data-main-code-start="None"
+                             data-main-code-end="None" role="tabpanel" id="gfg-panel-generated-0"
+                             aria-labelledby="gfg-tab-generated-0">
+                    <code class="language-java">
+                      <div class="highlight monokai"><pre hidden=""><span></span><span class="c1">// Java Program to demonstrate use of default values</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span
+                            class="p">;</span>
+<span class="kd">class</span> <span class="nc">GFG</span><span class="w"> </span><span
+                            class="p">{</span>
+<span class="w">    </span><span class="c1">// static values</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">byte</span><span
+                            class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span
+                            class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">long</span><span
+                            class="w"> </span><span class="n">l</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">short</span><span
+                            class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">boolean</span><span
+                            class="w"> </span><span class="n">bool</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">char</span><span
+                            class="w"> </span><span class="n">c</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span
+                            class="w"> </span><span class="n">str</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="n">Object</span><span
+                            class="w"> </span><span class="n">object</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">float</span><span
+                            class="w"> </span><span class="n">f</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">double</span><span
+                            class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span
+                            class="o">[]</span><span class="w"> </span><span
+                            class="n">Arr</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span
+                            class="w"> </span><span class="kt">void</span><span
+                            class="w"> </span><span class="nf">main</span><span
+                            class="p">(</span><span class="n">String</span><span class="o">[]</span><span
+                            class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// byte value</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"byte value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">b</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// short value</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"short value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">s</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// int value</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"int value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">i</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// long value</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"long value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">l</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"boolean value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">bool</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"char value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">c</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"float value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">f</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"double value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">d</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"string value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">str</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"object value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">object</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                            class="na">out</span><span class="p">.</span><span
+                            class="na">println</span><span class="p">(</span><span class="s">"Array value"</span><span
+                            class="w"> </span><span class="o">+</span><span class="w"> </span><span
+                            class="n">Arr</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre>
+                      </div>
+                    </code>
+                    <div class="CodeMirror cm-s-monokai">
+                      <div
+                          style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 15px;">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                                      style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none; --darkreader-inline-outline: initial;"
+                                      tabindex="0" data-darkreader-inline-outline=""></textarea>
+                      </div>
+                      <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"
+                           style="bottom: 0px;">
+                        <div style="min-width: 1px; height: 0px;"></div>
+                      </div>
+                      <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                        <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                      </div>
+                      <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                      <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                      <div class="CodeMirror-scroll" tabindex="-1">
+                        <div class="CodeMirror-sizer"
+                             style="margin-left: 0px; margin-bottom: -16px; border-right-width: 14px; min-height: 822px; min-width: 483.865px; padding-right: 0px; padding-bottom: 0px;">
+                          <div style="position: relative; top: 0px;">
+                            <div class="CodeMirror-lines" role="presentation">
+                              <div role="presentation"
+                                   style="position: relative; outline: none; --darkreader-inline-outline: initial;"
+                                   data-darkreader-inline-outline="">
+                                <div class="CodeMirror-measure"></div>
+                                <div class="CodeMirror-measure"></div>
+                                <div style="position: relative; z-index: 1;"></div>
+                                <div class="CodeMirror-cursors">
+                                  <div class="CodeMirror-cursor"
+                                       style="left: 15px; top: 0px; height: 23.2292px;">
+                                    &nbsp;
+                                  </div>
+                                </div>
+                                <div class="CodeMirror-code" role="presentation" style="">
+                                  <div class="CodeMirror-activeline" style="position: relative;">
+                                    <div
+                                        class="CodeMirror-activeline-background CodeMirror-linebackground"></div>
+                                    <div
+                                        class="CodeMirror-gutter-background CodeMirror-activeline-gutter"
+                                        style="left: 0px; width: 0px;"></div>
+                                    <pre class=" CodeMirror-line "
+                                         role="presentation"><span role="presentation"
+                                                                   style="padding-right: 0.1px;"><span
+                                        class="cm-comment">// Java Program to demonstrate use of default values</span></span></pre>
+                                  </div>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;"><span
+                                      class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span
+                                      class="cm-variable">io</span>.<span
+                                      class="cm-operator">*</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;"><span
+                                      class="cm-keyword">class</span> <span
+                                      class="cm-def">GFG</span> {</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-comment">// static values</span></span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">byte</span> <span class="cm-variable">b</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">int</span> <span class="cm-variable">i</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">long</span> <span class="cm-variable">l</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">short</span> <span
+                                      class="cm-variable">s</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">boolean</span> <span
+                                      class="cm-variable">bool</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">char</span> <span class="cm-variable">c</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">String</span> <span
+                                      class="cm-variable">str</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">Object</span> <span
+                                      class="cm-variable">object</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span class="cm-keyword">float</span> <span
+                                      class="cm-variable">f</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">double</span> <span
+                                      class="cm-variable">d</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">static</span> <span
+                                      class="cm-type">int</span>[] <span
+                                      class="cm-variable">Arr</span>;</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    <span
+                                      class="cm-keyword">public</span> <span class="cm-keyword">static</span> <span
+                                      class="cm-type">void</span> <span
+                                      class="cm-variable">main</span>(<span
+                                      class="cm-type">String</span>[] <span
+                                      class="cm-variable">args</span>)</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    {</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-comment">// byte value</span></span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"byte value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">b</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-comment">// short value</span></span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"short value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">s</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-comment">// int value</span></span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"int value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">i</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-comment">// long value</span></span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"long value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">l</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"boolean value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">bool</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"char value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">c</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"float value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">f</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"double value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">d</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"string value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">str</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"object value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">object</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">        <span
+                                      class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                      class="cm-variable">println</span>(<span class="cm-string">"Array value"</span> <span
+                                      class="cm-operator">+</span> <span
+                                      class="cm-variable">Arr</span>);</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">    }</span></pre>
+                                  <pre class=" CodeMirror-line "
+                                       role="presentation"><span role="presentation"
+                                                                 style="padding-right: 0.1px;">}</span></pre>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                            style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 822px; --darkreader-inline-border-bottom: transparent;"
+                            data-darkreader-inline-border-bottom=""></div>
+                        <div class="CodeMirror-gutters" style="display: none; height: 836px;"></div>
+                      </div>
+                    </div>
+                  </gfg-panel>
+                </gfg-tabs>
+                <p dir="ltr"><b><strong>Output:</strong></b></p>
+                <pre><span>byte value0
+short value0
+int value0
+long value0
+boolean valuefalse
+char value
+float value0.0
+double value0.0
+string valuenull
+object valuenull
+Array valuenull</span></pre>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

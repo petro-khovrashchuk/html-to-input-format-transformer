@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+<div id="main" class="wrapper single-page">
+  <div class="container-fluid bg-light" id="home-page" style="position: relative; max-width:100%;">
+    <div class="article-page_flex">
+      <div class="leftBar">
+        <div class="article--viewer">
+          <div class="article--viewer_content">
+            <div class="a-wrapper">
+              <article
+                  class="content post-1024150 post type-post status-publish format-standard hentry category-java category-interview-questions tag-interview-preparation tag-java-interview tag-interview-questions"
+                  id="post-1024150">
+                <div class="text">
+                  <h3 id="1-what-are-the-default-values-assigned-to-variables-and-instances-in-java"
+                      style="text-align:left"><span>24. What are the default values assigned to variables and instances
+                        in Java?</span></h3>
+                  <p dir="ltr"><span>In Java When we haven’t initialized the instance variables then the compiler
+                        initializes them with default values. The default values for instances and variables depend on
+                        their data types. Some common types of default data types are:</span></p>
+                  <ul>
+                    <li value="1"><span>The default value for numeric types (byte, short, int, long, float, and
+                          double) is 0.</span></li>
+                    <li value="2"><span>The default value for the boolean type is false.</span></li>
+                    <li value="3"><span>The default value for object types (classes, interfaces, and arrays) is
+                          null.</span></li>
+                    <li value="4"><span>The null character, "u0000, " is the default value for the char type.</span>
+                    </li>
+                  </ul>
+                  <p dir="ltr"><b><strong>Example:</strong></b></p>
+                  <p dir="ltr"><b><strong>Output:</strong></b></p>
+                  <pre>
+                      <code>
+                        <div class="highlight monokai">// Java Program to demonstrate use of default values
+
+                        class GFG {
+                          // static values
+                          static byte b;
+                          static int i;
+                          static long l;
+                          static short s;
+                          static boolean bool;
+                          static char c;
+                          static String str;
+                          static Object object;
+                          static float f;
+                          static double d;
+                          static int[] Arr;
+                          public static void main(String[] args)
+                          {
+                            // byte value
+                            System.out.println("byte value" + b);
+                            // short value
+                            System.out.println("short value" + s);
+                            // int value
+                            System.out.println("int value" + i);
+                            // long value
+                            System.out.println("long value" + l);
+                            System.out.println("boolean value" + bool);
+                            System.out.println("char value" + c);
+                            System.out.println("float value" + f);
+                            System.out.println("double value" + d);
+                            System.out.println("string value" + str);
+                            System.out.println("object value" + object);
+                            System.out.println("Array value" + Arr);
+                          }
+                        }</div>
+                      </code>
+                  </pre>
+                  <pre><span>byte value0
+short value0
+int value0
+long value0
+boolean valuefalse
+char value
+float value0.0
+double value0.0
+string valuenull
+object valuenull
+Array valuenull</span></pre>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
