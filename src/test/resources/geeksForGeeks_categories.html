@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+<div id="main" class="wrapper single-page">
+  <div class="container-fluid bg-light" id="home-page" style="position: relative; max-width:100%;">
+    <div class="article-page_flex">
+      <div class="leftBar">
+        <div class="article--viewer">
+          <div class="article--viewer_content">
+            <div class="a-wrapper">
+              <article
+                  class="content post-1024150 post type-post status-publish format-standard hentry category-java category-interview-questions tag-interview-preparation tag-java-interview tag-interview-questions"
+                  id="post-1024150">
+                <div class="text">
+                  <script>
+                    var video_api_response = JSON.parse("[]");
+                  </script>
+                  <p dir="ltr" style="text-align: justify;"><span>Java is one of the most popular programming languages in the world, known for its versatility, portability, and wide range of applications. Java is the most used language in top companies such as Uber, Airbnb, Google, Netflix, Instagram, Spotify, Amazon, and many more because of its features and performance.</span>
+                  </p>
+                  <p dir="ltr" style="text-align: justify;">
+                    <span>In this article, we will provide </span><b><strong>200+ Core Java
+                    Interview Questions</strong></b><span> tailored for both freshers and experienced professionals with 3, 5, and 8 years of experience. Here, we cover everything, including core Java concepts, Object-Oriented Programming (OOP), multithreading, exception handling, design patterns, Java Collections, and more, that will surely help you to crack Java interviews. </span>
+                  </p>
+                  <div id="table_of_content"><p
+                      style="margin:4px; font-size:20px; font-weight:bold;">Table of Content</p>
+                    <ul>
+                      <li><a href="#java-interview-questions-for-freshers">Java Interview questions
+                        for Freshers</a></li>
+                      <li><a href="#java-intermediate-interview-questions">Java Intermediate
+                        Interview Questions</a></li>
+                      <li><a href="#java-interview-questions-for-experienced">Java Interview
+                        Questions For Experienced</a></li>
+                      <li><a href="#java-difference-interview-questions">Java Difference Interview
+                        Questions</a></li>
+                    </ul>
+                  </div>
+                  <h2 id="java-interview-questions-for-freshers" style="text-align:left"><span>Java Interview questions for Freshers</span>
+                  </h2>
+                  <h3 id="1-is-java-platform-independent-if-then-how" style="text-align:left"><span>1. Is Java Platform Independent if then how?</span>
+                  </h3>
+                  <p dir="ltr" style="text-align: justify;"><span>Yes, Java is a Platform Independent language. Unlike many programming languages javac compiles the program to form a bytecode or .class file. This file is independent of the software or hardware running but needs a JVM(Java Virtual Machine) file preinstalled in the operating system for further execution of the bytecode. </span>
+                  </p>
+                  <p dir="ltr" style="text-align: justify;"><span>Although </span><b><strong>JVM is
+                    platform dependent</strong></b><span>, the bytecode can be created on any System and can be executed in any other system despite hardware or software being used which makes Java platform independent.</span>
+                  </p>
+                  <h2 id="java-intermediate-interview-questions" style="text-align:left"><span>Java Intermediate Interview Questions</span>
+                  </h2>
+                  <h3 id="151-explain-the-failfast-iterator-and-failsafe-iterator-along-with-examples-for-each"
+                      style="text-align:left"><span>151. Explain the FailFast iterator and FailSafe iterator along with examples for each.</span>
+                  </h3>
+                  <p dir="ltr">
+                    <span>A FailFast iterator is an iterator that throws a </span><b><strong>ConcurrentModificationException </strong></b><span>if it detects that the underlying collection has been modified while the iterator is being used. This is the default behavior of iterators in the Java Collections Framework. For example, the iterator for a HashMap is FailFast.</span>
+                  </p>
+                  <h3 id="152-what-is-exception-handling" style="text-align:left"><span>152. What is Exception Handling?</span>
+                  </h3>
+                  <p dir="ltr"><span>An </span><a
+                      href="https://www.geeksforgeeks.org/java/exceptions-in-java/"
+                      rel="noopener"><span>Exception</span></a><span> is an Event that interrupts the normal flow of the program and requires special processing. During the execution of a program, errors and unplanned occurrences can be dealt with by using the Java Exception Handling mechanism. Below are some reasons why Exceptions occur in Java:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>Device failure</span></li>
+                    <li value="2"><span>Loss of Network Connection</span></li>
+                    <li value="3"><span>Code Errors</span></li>
+                    <li value="4"><span>Opening an Unavailable file</span></li>
+                    <li value="5"><span>Invalid User Input</span></li>
+                    <li value="6"><span>Physical Limitations (out of disk memory)</span></li>
+                  </ul>
+                  <h3 id="153-how-many-types-of-exceptions-can-occur-in-a-java-program"
+                      style="text-align:left"><span>153. How many types of exceptions can occur in a Java program?</span>
+                  </h3>
+                  <p dir="ltr"><img
+                      src="https://media.geeksforgeeks.org/wp-content/uploads/20240402093838/Types-of-Exception-in-Java-660.png"
+                      alt="Types-of-Exception-in-Java-660" width="660" height="184"
+                      srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402093838/Types-of-Exception-in-Java-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402093838/Types-of-Exception-in-Java-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402093838/Types-of-Exception-in-Java-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402093838/Types-of-Exception-in-Java-660-300.png 300w"
+                      loading="lazy"></p>
+                  <p dir="ltr"><b><strong>There are generally two types of exceptions in
+                    Java:</strong></b></p>
+                  <ul>
+                    <li value="1"><b><strong>Built-in Exceptions: </strong></b><span>Built-in exceptions in Java are provided by the Java Libraries. These exceptions can be further divided into two subcategories i.e., checked and unchecked Exceptions. Below are some of the built-in exceptions in Java:       </span>
+                      <ul>
+                        <li value="1"><span>ArrayIndexOutOfBoundsExceptions</span></li>
+                        <li value="2"><span>ClassNotFoundException</span></li>
+                        <li value="3"><span>FileNotFoundException</span></li>
+                        <li value="4"><span>IOException</span></li>
+                        <li value="5"><span>NullPointerException</span></li>
+                        <li value="6"><span>ArithmeticException</span></li>
+                        <li value="7"><span>InterruptedException</span></li>
+                        <li value="8"><span>RuntimeException</span></li>
+                      </ul>
+                    </li>
+                    <li value="2"><b><strong>User-Defined Exceptions: </strong></b><span>User-defined exceptions are defined by the programmers themselves to handle some specific situations or errors which are not covered by built-in exceptions. To define user-defined exceptions a new class that extends the appropriate exception class must be defined. User-defined Exceptions in Java are used when the built-in exceptions are in Java.</span>
+                    </li>
+                  </ul>
+                  <h3 id="154-difference-between-an-error-and-an-exception" style="text-align:left">
+                    <span>154. Difference between an Error and an Exception.</span></h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><b><strong>Errors</strong></b>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><b><strong>Exceptions</strong></b>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Recovering from Errors is not possible. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Recover from exceptions by either using a try-catch block or throwing exceptions back to the caller.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Errors are all unchecked types in Java.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>It includes both checked as well as unchecked types that occur.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Errors are mostly caused by the environment in which the program is running.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>The program is mostly responsible for causing exceptions.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Errors can occur at compile time as well as run time. Compile Time: Syntax Error, Run Time: Logical Error.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>All exceptions occur at runtime but checked exceptions are known to the compiler while unchecked are not.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>They are defined in java.lang.Error package.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>They are defined in java.lang.Exception package</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><b><strong>Examples</strong></b><span>: java.lang.StackOverflowError, java.lang.OutOfMemoryError</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><b><strong>Examples</strong></b><span>: Checked Exceptions: SQLException, IOException Unchecked Exceptions: ArrayIndexOutOfBoundException, NullPointerException, ArithmeticException.</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h2 id="java-interview-questions-for-experienced" style="text-align:left"><span>Java Interview Questions For Experienced</span>
+                  </h2>
+                  <h3 id="181-what-are-the-different-types-of-thread-priorities-in-java-and-what-is-the-default-priority-of-a-thread-assigned-by-jvm"
+                      style="text-align:left"><span>181. What are the different types of Thread Priorities in Java? And what is the default priority of a thread assigned by JVM?</span>
+                  </h3>
+                  <p dir="ltr"><span>Priorities in threads is a concept where every thread is having a priority which in layman’s language one can say every object is having priority here which is represented by numbers ranging from 1 to 10.&nbsp;There are different types of thread properties in Java mentioned below:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>MIN_PRIORITY</span></li>
+                    <li value="2"><span>MAX_PRIORITY</span></li>
+                    <li value="3"><span>NORM_PRIORITY&nbsp;</span></li>
+                  </ul>
+                  <p dir="ltr"><span>By default, the thread is assigned NORM_PRIORITY.</span></p>
+                  <h3 id="182-why-garbage-collection-is-necessary-in-java" style="text-align:left">
+                    <span>182. Why Garbage Collection is necessary in Java?</span></h3>
+                  <p dir="ltr"><span>For Java, Garbage collection is necessary to avoid memory leaks which can cause the program to crash and become unstable. There is no way to avoid garbage collection in Java. Unlike C++, Garbage collection in Java helps programmers to focus on the development of the application instead of managing memory resources and worrying about memory leakage. Java Virtual Machine (JVM) automatically manages the memory periodically by running a garbage collector which frees up the unused memory in the application. Garbage collection makes Java memory efficient because it removes unreferenced objects from the heap memory.</span>
+                  </p>
+                  <h3 id="183-what-is-the-drawback-of-garbage-collection" style="text-align:left">
+                    <span>183. What is the drawback of Garbage Collection?</span></h3>
+                  <p dir="ltr"><span>Apart from many advantages, Garbage Collector has certain drawbacks mentioned below:</span>
+                  </p>
+                  <ol>
+                    <li value="1"><span>The main drawback to Garbage collection is that it can cause pauses in an application's execution as it works to clear the memory which slows down the performance of the application.&nbsp;</span>
+                    </li>
+                    <li value="2"><span>The Process of Garbage collection is non-deterministic which makes it difficult to predict when garbage collection occurs which causes unpredictable behavior in applications. For Example, if we write any program then it is hard for programmers to decide if the issue is caused by garbage collection or by any other factors in the program.&nbsp;</span>
+                    </li>
+                    <li value="3"><span>Garbage collection can also increase memory usage if the program creates and discards a lot of short-lived objects.</span>
+                    </li>
+                  </ol>
+                  <h3 id="184-explain-the-difference-between-a-minor-major-and-full-garbage-collection"
+                      style="text-align:left"><span>184. Explain the difference between a minor, major, and full garbage collection.</span>
+                  </h3>
+                  <p dir="ltr"><span>The Java Virtual Machine (JVM) removes objects that are no longer in use using a garbage collector which periodically checks and removes these objects. There are different types of garbage collection in the JVM, each with different characteristics and performance implications. The main types of garbage collection are:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><b><strong>Minor garbage collection:</strong></b><span> Also known as young generation garbage collection, this type of garbage collection is used to collect and reclaim memory that is used by short-lived objects (objects that are quickly created and discarded).&nbsp;</span>
+                    </li>
+                    <li value="2"><b><strong>Major garbage collection:</strong></b><span> Also known as old-generation garbage collection, this type of garbage collection is used to collect and reclaim memory that is used by long-lived objects (objects that survive multiple minor garbage collections and are promoted to the old generation).</span>
+                    </li>
+                    <li value="3"><b><strong>Full garbage collection:</strong></b><span> During full garbage collection, memories from all generations are collected and reclaimed, including memories of young and old. A full garbage collection normally takes longer to complete than a minor or major garbage collection which causes that app to pause temporarily.</span>
+                    </li>
+                  </ul>
+                  <h3 id="185-how-will-you-identify-major-and-minor-garbage-collections-in-java"
+                      style="text-align:left"><span>185. How will you identify major and minor garbage collections in Java?</span>
+                  </h3>
+                  <p dir="ltr"><span>Major garbage collection works on the survivor space and Minor garbage collection works on the Eden space to perform a mark-and-sweep routine. And we can identify both of them based on the output where the minor collection prints "GC", whereas the major collection prints "Full GC" for the case where the garbage collection logging is enabled with "-XX:PrintGCDetails" or "verbose:gc".</span>
+                  </p>
+                  <h3 id="186-what-is-a-memory-leak-and-how-does-it-affect-garbage-collection"
+                      style="text-align:left"><span>186. What is a memory leak, and how does it affect garbage collection?</span>
+                  </h3>
+                  <p dir="ltr"><span>In Java Memory leaks can be caused by a variety of factors, such as not closing resources properly, holding onto object references longer than necessary, or creating too many objects unnecessarily. There are situations in which garbage collector does not collect objects because there is a reference to those objects. In these situations where the application creates lots of objects and does not use them and every object has some valid references, a Garbage collector in Java cannot destroy the objects. These useless objects which do not provide any value to the program are known as Memory leaks. Memory leaks can impact garbage collection negatively by preventing the garbage collector from reclaiming unused memory. This behavior will lead to slow performance or sometimes system failure. In a program, it is important to avoid memory leaks by managing resources and object references properly.&nbsp;</span>
+                  </p>
+                  <p dir="ltr"><b><strong>Example:</strong></b></p>
+                  <gfg-tabs data-run-ide="true" data-mode="light" role="tablist">
+                    <gfg-tab slot="tab" hidden="" role="tab" id="gfg-tab-generated-34"
+                             aria-selected="true" tabindex="0"
+                             aria-controls="gfg-panel-generated-34" selected="">Java
+                    </gfg-tab>
+                    <gfg-panel slot="panel" data-code-lang="java" data-main-code-start="None"
+                               data-main-code-end="None" role="tabpanel" id="gfg-panel-generated-34"
+                               aria-labelledby="gfg-tab-generated-34">
+                      <code class="language-java">
+                        <div class="highlight"><pre hidden=""><span></span><span class="c1">// Java Program to demonstrate memory leaks</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span
+                              class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Vector</span><span
+                              class="p">;</span>
+<span class="kd">class</span> <span class="nc">GFG</span><span class="w"> </span><span
+                              class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span
+                              class="w"> </span><span class="kt">void</span><span class="w"> </span><span
+                              class="nf">main</span><span class="p">(</span><span
+                              class="n">String</span><span class="o">[]</span><span
+                              class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Vector</span><span class="w"> </span><span class="n">a</span><span
+                              class="w"> </span><span class="o">=</span><span
+                              class="w"> </span><span class="k">new</span><span
+                              class="w"> </span><span class="n">Vector</span><span
+                              class="p">(</span><span class="mi">21312312</span><span
+                              class="p">);</span>
+<span class="w">        </span><span class="n">Vector</span><span class="w"> </span><span class="n">b</span><span
+                              class="w"> </span><span class="o">=</span><span
+                              class="w"> </span><span class="k">new</span><span
+                              class="w"> </span><span class="n">Vector</span><span
+                              class="p">(</span><span class="mi">2147412344</span><span
+                              class="p">);</span>
+<span class="w">        </span><span class="n">Vector</span><span class="w"> </span><span class="n">c</span><span
+                              class="w"> </span><span class="o">=</span><span
+                              class="w"> </span><span class="k">new</span><span
+                              class="w"> </span><span class="n">Vector</span><span
+                              class="p">(</span><span class="mi">219944</span><span
+                              class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span
+                              class="na">out</span><span class="p">.</span><span
+                              class="na">println</span><span class="p">(</span><span class="s">"Memory Leak in Java"</span><span
+                              class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre>
+                        </div>
+                      </code>
+                      <div class="CodeMirror cm-s-default">
+                        <div
+                            style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 15px;">
+                          <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                                    tabindex="0"
+                                    style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+                        </div>
+                        <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"
+                             style="bottom: 0px;">
+                          <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+                          <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                          <div class="CodeMirror-sizer"
+                               style="margin-left: 0px; margin-bottom: -15px; border-right-width: 15px; min-height: 287px; min-width: 507.773px; padding-right: 0px; padding-bottom: 0px;">
+                            <div style="position: relative; top: 0px;">
+                              <div class="CodeMirror-lines" role="presentation">
+                                <div role="presentation" style="position: relative; outline: none;">
+                                  <div class="CodeMirror-measure"></div>
+                                  <div class="CodeMirror-measure"></div>
+                                  <div style="position: relative; z-index: 1;"></div>
+                                  <div class="CodeMirror-cursors">
+                                    <div class="CodeMirror-cursor"
+                                         style="left: 15px; top: 0px; height: 23.2266px;">&nbsp;
+                                    </div>
+                                  </div>
+                                  <div class="CodeMirror-code" role="presentation" style="">
+                                    <div class="CodeMirror-activeline" style="position: relative;">
+                                      <div
+                                          class="CodeMirror-activeline-background CodeMirror-linebackground"></div>
+                                      <div
+                                          class="CodeMirror-gutter-background CodeMirror-activeline-gutter"
+                                          style="left: 0px; width: 0px;"></div>
+                                      <pre class=" CodeMirror-line " role="presentation"><span
+                                          role="presentation" style="padding-right: 0.1px;"><span
+                                          class="cm-comment">// Java Program to demonstrate memory leaks</span></span></pre>
+                                    </div>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation" style="padding-right: 0.1px;"><span
+                                        class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span
+                                        class="cm-variable">io</span>.<span
+                                        class="cm-operator">*</span>;</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation" style="padding-right: 0.1px;"><span
+                                        class="cm-keyword">import</span> <span class="cm-variable">java</span>.<span
+                                        class="cm-variable">util</span>.<span class="cm-variable">Vector</span>;</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation" style="padding-right: 0.1px;"><span
+                                        class="cm-keyword">class</span> <span
+                                        class="cm-def">GFG</span> {</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation" style="padding-right: 0.1px;">    <span
+                                        class="cm-keyword">public</span> <span class="cm-keyword">static</span> <span
+                                        class="cm-type">void</span> <span
+                                        class="cm-variable">main</span>(<span
+                                        class="cm-type">String</span>[] <span class="cm-variable">args</span>)</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">    {</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">        <span
+                                        class="cm-variable">Vector</span> <span class="cm-variable">a</span> <span
+                                        class="cm-operator">=</span> <span
+                                        class="cm-keyword">new</span> <span class="cm-variable">Vector</span>(<span
+                                        class="cm-number">21312312</span>);</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">        <span
+                                        class="cm-variable">Vector</span> <span class="cm-variable">b</span> <span
+                                        class="cm-operator">=</span> <span
+                                        class="cm-keyword">new</span> <span class="cm-variable">Vector</span>(<span
+                                        class="cm-number">2147412344</span>);</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">        <span
+                                        class="cm-variable">Vector</span> <span class="cm-variable">c</span> <span
+                                        class="cm-operator">=</span> <span
+                                        class="cm-keyword">new</span> <span class="cm-variable">Vector</span>(<span
+                                        class="cm-number">219944</span>);</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">        <span
+                                        class="cm-variable">System</span>.<span class="cm-variable">out</span>.<span
+                                        class="cm-variable">println</span>(<span class="cm-string">"Memory Leak in Java"</span>);</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">    }</span></pre>
+                                    <pre class=" CodeMirror-line " role="presentation"><span
+                                        role="presentation"
+                                        style="padding-right: 0.1px;">}</span></pre>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                              style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 287px;"></div>
+                          <div class="CodeMirror-gutters"
+                               style="display: none; height: 302px;"></div>
+                        </div>
+                      </div>
+                    </gfg-panel>
+                  </gfg-tabs>
+                  <p dir="ltr"><b><strong>Output:</strong></b></p>
+                  <pre><span>Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    at java.base/java.util.Vector.&lt;init&gt;(Vector.java:142)
+    at java.base/java.util.Vector.&lt;init&gt;(Vector.java:155)
+    at GFG.main(GFG.java:9)</span></pre>
+                  <h3 id="187-name-some-classes-present-in-javautilregex-package"
+                      style="text-align:left"><span>187. Name some classes present in java.util.regex package.</span>
+                  </h3>
+                  <p dir="ltr"><span>Regular Expressions or Regex in Java is an API used for searching and manipulating of strings in Java. It creates String patterns that can extract the data needed from the strings or can generalize a pattern.</span>
+                  </p>
+                  <p dir="ltr">
+                    <span>There are 3 Classes present in java.util.regex mentioned below:</span></p>
+                  <ul>
+                    <li value="1"><span>Pattern Class: Can define patterns</span></li>
+                    <li value="2"><span>Matcher Class: Can perform match operations on text using patterns</span>
+                    </li>
+                    <li value="3"><span>PatternSyntaxException Class: Can indicate a syntax error in a regular expression pattern.</span>
+                    </li>
+                  </ul>
+                  <p dir="ltr"><span>Also, apart from the 3 classes package consists of a single interface MatchResult Interface which can be used for representing the result of a match operation.</span>
+                  </p>
+                  <h3 id="188-write-a-regular-expression-to-validate-a-password-a-password-must-start-with-an-alphabet-and-followed-by-alphanumeric-characters-its-length-must-be-in-between-8-to-20"
+                      style="text-align:left"><span>188. Write a regular expression to validate a password. A password must start with an alphabet and followed by alphanumeric characters; Its length must be in between 8 to 20.</span>
+                  </h3>
+                  <pre><span>regex = “^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&amp;-+=()])(?=\\S+$).{8, 20}$”</span></pre>
+                  <p dir="ltr"><b><strong>Explanation:</strong></b></p>
+                  <ul>
+                    <li value="1"><span>^ used for starting character of the string.</span></li>
+                    <li value="2">
+                      <span>(?=.*[0-9]) used for a digit must occur at least once.</span></li>
+                    <li value="3"><span>(?=.*[a-z]) used for a lowercase alphabet must occur at least once.</span>
+                    </li>
+                    <li value="4"><span>(?=.*[A-Z]) used for an upper case alphabet that must occur at least once in the substring.</span>
+                    </li>
+                    <li value="5"><span>(?=.*[@#$%^&amp;-+=()] used for a special character that must occur at least once.</span>
+                    </li>
+                    <li value="6">
+                      <span>(?=\\S+$) white spaces don’t allow in the entire string.</span></li>
+                    <li value="7"><span>.{8, 20} used for at least 8 characters and at most 20 characters.</span>
+                    </li>
+                    <li value="8"><span>$ used for the end of the string.</span></li>
+                  </ul>
+                  <h3 id="189-what-is-jdbc" style="text-align:left"><span>189. What is JDBC?</span>
+                  </h3>
+                  <p dir="ltr"><a href="https://www.geeksforgeeks.org/java/introduction-to-jdbc/"
+                                  rel="noopener"><span>JDBC</span></a><span> standard API is used to link Java applications and relational databases. It provides a collection of classes and interfaces that let programmers to use the Java programming language to communicate with the database. The classes and interface of JDBC allow the application to send requests which are made by users to the specified database. There are generally four components of JDBC by which it interacts with the database:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>JDBC API</span></li>
+                    <li value="2"><span>JDBC Driver manager</span></li>
+                    <li value="3"><span>JDBC Test Suite</span></li>
+                    <li value="4"><span>JDBC-ODBC Bridge Drivers</span></li>
+                  </ul>
+                  <p dir="ltr"><img
+                      src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768.png"
+                      alt="JDBC-768" width="768" height="552"
+                      srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768.png 768w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768-300.png 300w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094327/JDBC-768-660.png 660w"
+                      loading="lazy"></p>
+                  <h3 id="190-what-is-jdbc-driver" style="text-align:left"><span>190. What is JDBC Driver?</span>
+                  </h3>
+                  <p dir="ltr"><a href="https://www.geeksforgeeks.org/java/jdbc-drivers/"
+                                  rel="noopener"><span>JDBC Driver</span></a><span> is a software component that is used to enable a Java application to interact with the database. JDBC provides the implementation of the JDBC API for a specific database management system, which allows it to connect the database, execute SQL statements and retrieve data. There are four types of JDBC drivers:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>JDBC-ODBC Bridge driver</span></li>
+                    <li value="2"><span>Native-API driver</span></li>
+                    <li value="3"><span>Network Protocol driver</span></li>
+                    <li value="4"><span>Thin driver</span></li>
+                  </ul>
+                  <p dir="ltr"><img
+                      src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094350/JDBC-Driver-660.png"
+                      alt="JDBC-Driver-660" width="660" height="468"
+                      srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094350/JDBC-Driver-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094350/JDBC-Driver-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094350/JDBC-Driver-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094350/JDBC-Driver-660-300.png 300w"
+                      loading="lazy"></p>
+                  <h3 id="191-what-are-the-steps-to-connect-to-the-database-in-java"
+                      style="text-align:left"><span>191. What are the steps to connect to the database in Java?</span>
+                  </h3>
+                  <p dir="ltr"><span>There are certain steps to connect the database and Java Program as mentioned below:</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>Import the Packages</span></li>
+                    <li value="2"><span>Load the drivers using the forName() method&nbsp;</span>
+                    </li>
+                    <li value="3"><span>Register the drivers using DriverManager&nbsp;</span></li>
+                    <li value="4">
+                      <span>Establish a connection using the Connection class object</span></li>
+                    <li value="5"><span>Create a statement</span></li>
+                    <li value="6"><span>Execute the query</span></li>
+                    <li value="7"><span>Close the connections</span></li>
+                  </ul>
+                  <h3 id="192-what-are-the-jdbc-api-components" style="text-align:left"><span>192. What are the JDBC API components?</span>
+                  </h3>
+                  <p dir="ltr"><span>JDBC API components provide various methods and interfaces for easy communication with the databases also it provides packages like java Se and java EE which provides the capability of write once run anywhere (WORA).</span>
+                  </p>
+                  <p dir="ltr"><b><strong>Syntax:</strong></b></p>
+                  <pre><span>java.sql.*;</span></pre>
+                  <h3 id="193-what-is-jdbc-connection-interface" style="text-align:left"><span>193. What is JDBC Connection interface?</span>
+                  </h3>
+                  <p dir="ltr"><span>Java database connectivity interface (JDBC) is a software component that allows Java applications to interact with databases. To enhance the connection, JDBC requires drivers for each database.</span>
+                  </p>
+                  <h3 id="194-what-does-the-jdbc-resultset-interface" style="text-align:left"><span>194. What does the JDBC ResultSet interface?</span>
+                  </h3>
+                  <p dir="ltr"><span>JDBC ResultSet interface is used to store the data from the database and use it in our Java Program. We can also use ResultSet to update the data using updateXXX() methods. ResultSet object points the cursor before the first row of the result data. Using the next() method, we can iterate through the ResultSet.</span>
+                  </p>
+                  <h3 id="195-what-is-the-jdbc-rowset" style="text-align:left"><span>195. What is the JDBC Rowset?</span>
+                  </h3>
+                  <p dir="ltr"><span>A JDBC RowSet provides a way to store the data in tabular form. RowSet is an interface in java that can be used within the java.sql package. The connection between the RowSet object and the data source is maintained throughout its life cycle. RowSets are classified into five categories based on implementation mentioned below:</span>
+                  </p>
+                  <ol>
+                    <li value="1"><span>JdbcRowSet</span></li>
+                    <li value="2"><span>CachedRowSet</span></li>
+                    <li value="3"><span>WebRowSet</span></li>
+                    <li value="4"><span>FilteredRowSet</span></li>
+                    <li value="5"><span>JoinRowSet</span></li>
+                  </ol>
+                  <h3 id="196-what-is-the-role-of-the-jdbc-drivermanager-class"
+                      style="text-align:left"><span>196. What is the role of the JDBC DriverManager class?</span>
+                  </h3>
+                  <p dir="ltr"><span>JDBC DriverManager class acts as an interface for users and Drivers. It is used in many ways as mentioned below:&nbsp;</span>
+                  </p>
+                  <ul>
+                    <li value="1"><span>It is used to create a connection between a Java application and the database.&nbsp;</span>
+                    </li>
+                    <li value="2">
+                      <span>Helps to keep track of the drivers that are available.</span></li>
+                    <li value="3"><span>It can help to establish a connection between a database and the appropriate drivers.</span>
+                    </li>
+                    <li value="4"><span>It contains all the methods that can register and deregister the database driver classes.</span>
+                    </li>
+                    <li value="5"><span>DriverManager.registerDriver() method can maintain the list of Driver classes that have registered themselves.</span>
+                    </li>
+                  </ul>
+                  <h2 id="java-difference-interview-questions" style="text-align:left"><span>Java Difference Interview Questions</span>
+                  </h2>
+                  <h3 id="197-differentiate-between-iterable-and-iterator" style="text-align:left">
+                    <span>197. Differentiate between Iterable and Iterator.</span></h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Iterable</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Iterator</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Iterable provides a way to iterate over a sequence of elements.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Iterator helps in iterating over a collection of elements sequentially.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><b><strong>iterator()</strong></b><span> method returns an Iterator.</span>
+                      </td>
+                      <td style="width: 350px;">
+                        <b><strong>hasNext()</strong></b><span> and </span><b><strong>next() </strong></b><span>methods are required.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><b><strong>remove() </strong></b><span>method is optional.</span>
+                      </td>
+                      <td style="width: 350px;"><b><strong>remove() </strong></b><span>method is required in the iterator.</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Examples are </span><b><strong>List,
+                        Queue, and Set.</strong></b></p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Examples are </span><b><strong>ListIterator,
+                        Enumeration, and ArrayIterator.</strong></b></p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="198-differentiate-between-list-and-set" style="text-align:left"><span>198. Differentiate between List and Set.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>List</span></p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Set</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Ordered</span></p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Unordered</span></p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>List allows duplicates.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Set does not allow duplicate values.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>List is accessed by index.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr">
+                        <span>Set is accessed by hashcode.</span></p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Multiple null elements can be stored.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr">
+                        <span>Null element can store only once.</span></p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Examples are ArrayList, LinkedList, etc.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Examples are HashSet and TreeSet. LinkedHashSet etc.</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="199-differentiate-between-list-and-map" style="text-align:left"><span>199. Differentiate between List and Map.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>List</span></p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Map</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>List interface allows duplicate elements.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Map does not allow duplicate elements.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr">
+                        <span>List maintains insertion order.</span></p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Map do not maintain insertion order.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Multiple null elements can be stored.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>The map allows a single null key at most and any number of null values.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>The list provides get() method to get the element at a specified index.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>The map does not provide a get method to get the elements at a specified index.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>List is Implemented by ArrayList, etc.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Map is Implemented by HashMap, TreeMap, LinkedHashMap</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="200-differentiate-between-queue-and-stack" style="text-align:left"><span>200. Differentiate between Queue and Stack.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Queue</span></p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Stack</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Queue data structure is used to store elements, and is used to perform operations like enqueue, dequeue from back or end of the queue.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Stack data structure is used to store elements, and is used to perform operations like push, pop from top of the stack.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Queue data structure Implements FIFO order.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Stack data structure Implements LIFO order.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insertion and deletion in queues take place from the opposite ends of the list. Deletion takes place from the front of the list and insertion takes place at the rear of the list.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insertion and deletion in stacks take place only from one end of the list called the top.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insert operation is called enqueue operation.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insert operation is called Push operation.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Queue is generally used to solve problems related to sequential processing.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Stack is generally used to solve problems related to recursion.</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="201-differentiate-between-priorityqueue-and-treeset"
+                      style="text-align:left"><span>201. Differentiate between PriorityQueue and TreeSet.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Priority Queue</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>TreeSet</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>It uses Queue as an underlying data structure.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>It uses a Set as an underlying data structure.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>This data structure allows duplicate elements</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>This data structure does not allow duplicate elements</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Priority Queue is Implemented by PriorityQueue class.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet is implemented by TreeSet class.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>PriorityQueue comes in JDK 1.5.&nbsp;</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet comes in JDK 1.4.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;();</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>reeSet&lt;Integer&gt; ts = new TreeSet&lt;&gt;();</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="202-differentiate-between-the-singly-linked-list-and-doubly-linked-list"
+                      style="text-align:left"><span>202. Differentiate between the Singly Linked List and Doubly Linked List.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Singly Linked List</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>Doubly Linked List</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Singly Linked List contain only two segments i.e, Data and Link.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Doubly Linked List contains three segments i.e, Data, and two pointers.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Traversal in a singly linked list is possible in only a forward direction.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Traversal in a doubly linked list is only possible in both directions forward as well as backward.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>It uses less memory as every single node has only one pointer.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>It requires more memory than a singly linked list as each node has two pointers.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Easy to use and insert nodes at the beginning of the list.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Slightly more complex to use and easy to insert at the end of the list.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insertion and deletion at the head take O(1), but at any other position, they require traversal, making them O(n).</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Insertion and deletion at the start or end take O(1) (if head and tail pointers are maintained). However, operations at arbitrary positions require O(n) time due to traversal.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p><img
+                          src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094428/Singly-Linked-List-660.png"
+                          alt="Singly-Linked-List-660" width="660" height="129"
+                          srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094428/Singly-Linked-List-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094428/Singly-Linked-List-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094428/Singly-Linked-List-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094428/Singly-Linked-List-660-300.png 300w"
+                          loading="lazy"><span>&nbsp;</span></p></td>
+                      <td style="width: 350px;"><p><img
+                          src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094449/Doubly-Linked-List-660.png"
+                          alt="Doubly-Linked-List-660" width="660" height="109"
+                          srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094449/Doubly-Linked-List-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094449/Doubly-Linked-List-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094449/Doubly-Linked-List-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094449/Doubly-Linked-List-660-300.png 300w"
+                          loading="lazy"><span>&nbsp;</span></p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="203-differentiate-between-failfast-and-failsafe" style="text-align:left">
+                    <span>203. Differentiate between Failfast and Failsafe.</span></h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>FailFast</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>FailSafe</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failsfast fails immediately when it detects concurrent modification during the time of iteration.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failsafe continues to iterate over the original collection and also creates a copy to modify.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failfast is generally used in single-threaded environments.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failsafe is used in multithreaded environments.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failfast does not allow any modification while iteration.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failsafe allows modification during the time of iteration.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failfast is fast compared to failsafe as it does not involve the copying of the collection.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Failsafe is generally slow compared to failfast.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr">
+                        <span>FailFast throws </span><b><strong>ConcurrentModificationException </strong></b><span>if the collection is modified during iteration.             </span>
+                      </p>
+                        <p dir="ltr"><br></p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>FailSafe does not throws any exception but instead, it creates a copy of the collection to iterate.</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="204-differentiate-between-hashmap-and-treemap" style="text-align:left">
+                    <span>204. Differentiate between HashMap and TreeMap.</span></h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>HashMap</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>TreeMap</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Hasmap uses a hashtable in order to store key-value pairs.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Treemap uses Red-black trees to store key-value pair.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Hashmap does not maintain any specific order for key-value pairs.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Treemap maintains a natural ordering based on the keys.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Order of iteration is not guaranteed in the hashmap.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Iteration is of sorted order based on keys.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Hashmaps are faster for retrieval compared to Treemap.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Retrieval in Treemap is slower as it uses tree traversal to find keys.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Hashmap is implemented by using an Array of linked list.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeMap is implemented using a Red-black Tree.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Hashmap uses the equals() method of the Object class to compare keys.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeMap uses compareTo() method to compare keys.</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="205-differentiate-between-queue-and-deque" style="text-align:left"><span>205. Differentiate between Queue and Deque.</span>
+                  </h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Queue</span></p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;">
+                        <span>Deque</span></p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>The queue is a linear Data structure that is used to store a collection of elements.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Deque also known as a Double-ended queue is also a linear data structure that stores a collection of elements with operations to remove and add from both ends.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Elements in the queue can only be inserted at the end of the data structure.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Elements can be inserted from both ends of the data structure.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Queue can be implemented using Array or Linked List.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Dequeue can be implemented using Circular Array or Doubly Linked List.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>Queues are generally used to implement a waiting list or task queue.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>Deque is used to implement a stack or dequeuing elements from both ends.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p><img
+                          src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094512/Queue-660.png"
+                          alt="Queue-660" width="660" height="232"
+                          srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094512/Queue-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094512/Queue-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094512/Queue-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094512/Queue-660-300.png 300w"
+                          loading="lazy"><span>&nbsp;</span></p></td>
+                      <td style="width: 350px;"><p><img
+                          src="https://media.geeksforgeeks.org/wp-content/uploads/20240402094537/Doubly-Ended-Queue-660.png"
+                          alt="Doubly-Ended-Queue-660" width="660" height="229"
+                          srcset="https://media.geeksforgeeks.org/wp-content/uploads/20240402094537/Doubly-Ended-Queue-660.png 660w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094537/Doubly-Ended-Queue-660-100.png 100w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094537/Doubly-Ended-Queue-660-200.png 200w,https://media.geeksforgeeks.org/wp-content/uploads/20240402094537/Doubly-Ended-Queue-660-300.png 300w"
+                          loading="lazy"><span>&nbsp;</span></p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3 id="206-differentiate-between-hashset-and-treeset" style="text-align:left">
+                    <span>206. Differentiate between HashSet and TreeSet.</span></h3>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>HashSet</span>
+                      </p></th>
+                      <th style="width: 350px;"><p dir="ltr" style="text-align: center;"><span>TreeSet</span>
+                      </p></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>HashSet is unordered.</span></p>
+                      </td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet is based on natural ordering.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr">
+                        <span>HashSet allows null elements.</span></p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet does not allow null elements.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>HashSet is Implemented by the HashSet class.</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet is Implemented by TreeSet class.</span>
+                      </p></td>
+                    </tr>
+                    <tr>
+                      <td style="width: 350px;"><p dir="ltr"><span>HashSet&lt;String&gt; hs = new HashSet&lt;&gt;();</span>
+                      </p></td>
+                      <td style="width: 350px;"><p dir="ltr"><span>TreeSet&lt;String&gt; ts = new TreeSet&lt;&gt;();</span>
+                      </p></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <img
+                      src="https://media.geeksforgeeks.org/wp-content/uploads/20230609113553/Core-Java-Interview-Questions.png"
+                      alt="Core-Java-Interview-Questions" width="inherit" height="inherit"
+                      loading="lazy">
+                  <script>
+                    const rawVideoDataMap = null;
+
+                  // Convert it into a JS Map
+                  const videoDataMap = new Map(Object.entries(rawVideoDataMap));
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                      let currentlySelectedTile = document.getElementById("video-info-container-title");
+                      let firstVideoH2;
+                      let firstSelectedVideo
+                      var videoPlayer = document.getElementById('video-iframe-container');
+                      if (!videoPlayer) return;
+
+                      var videoIframe = videoPlayer.querySelector('iframe');
+                      if (!videoIframe) return;
+
+                      // Safely inject PHP data as JSON into JavaScript
+                      var resp = null;
+
+                      function postToIframeWhenReady(iframe, data, maxAttempts = 20, intervalTime = 100) {
+                          let attempts = 0;
+                          const interval = setInterval(() => {
+                              if (iframe && iframe.contentWindow) {
+                                  try {
+                                      iframe.contentWindow.postMessage(data, '*');
+                                      clearInterval(interval);
+                                  } catch (err) {
+                                      console.warn("❌ Failed to postMessage, retrying...");
+                                  }
+                              }
+                              if (++attempts >= maxAttempts) {
+                                  console.warn("⚠️ postMessage failed: iframe not ready after multiple attempts.");
+                                  clearInterval(interval);
+                              }
+                          }, intervalTime);
+                      }
+
+                      // Call the function right after iframe is confirmed to exist
+                      videoIframe.onload = function () {
+                          postToIframeWhenReady(videoIframe, { resp: resp, inView: false });
+                      };
+
+                      const playlistContainer = document.getElementById("video-playlist-container");
+                      if(playlistContainer) {
+                          firstSelectedVideo = playlistContainer.querySelectorAll('.playlist-video-tile')[0];
+                          if(firstSelectedVideo) {
+                              firstVideoH2 = firstSelectedVideo.querySelector('h2');
+                              firstVideoH2.style.setProperty('color', 'var(--discussion-button-color)', 'important');
+                          }
+                      }
+
+                      function changeCurrentPlayingVideoTitle(tile, autoplayed = true) {
+                          const playlistVideoTileHeading = tile.querySelector('h2');
+                          if (playlistVideoTileHeading) {
+                              if(!autoplayed && firstVideoH2.innerText !== playlistVideoTileHeading.innerText) {
+                                  firstVideoH2.style.setProperty('color', '#EC4E20', 'important');
+                              }
+                              if(autoplayed) {
+                                  let siblingElement = tile.previousElementSibling;
+                                  const siblingElementH2 = siblingElement.querySelector('h2');
+                                  siblingElementH2.style.setProperty('color', '#EC4E20', 'important');
+                                  firstVideoH2 = playlistVideoTileHeading;
+                              }
+                              playlistVideoTileHeading.style.setProperty('color', 'var(--discussion-button-color)', 'important');
+                              if (currentlySelectedTile) {
+                                  currentlySelectedTile.innerText = playlistVideoTileHeading.innerText;
+                              }
+                          }
+                      }
+                      // Inject the video data map as a JS object
+                      window.addEventListener('message', function (event) {
+                          if (event.data.type === 'AUTOPLAYED_NEXT_VIDEO' && event.data.autoplayPlaylistEnabled) {
+
+                              // Changing the current video index on autoplaying the next video from playlist
+                              const allVideoTiles = Array.from(document.querySelectorAll('.playlist-video-tile'));
+                              changeCurrentPlayingVideoTitle(allVideoTiles[event.data.currentVideoIndex]);
+                          }
+                      });
+
+                      if(playlistContainer) {
+                          playlistContainer.addEventListener('click', (event) => {
+                              const tile = event.target.closest('.playlist-video-tile');
+
+                              // Find the index of the clicked tile
+                              const allTiles = Array.from(playlistContainer.querySelectorAll('.playlist-video-tile'));
+                              const currentIndex = allTiles.findIndex((el) => el === tile);
+
+                              if (tile) {
+                                  const videoId = tile.getAttribute('data-video-id');
+                                  const videoData = videoDataMap.get(videoId);
+                                  videoIframe.contentWindow.postMessage({ playlist: [videoData], inView: true, clickedVideoFromPlaylist: true, currentIndex: currentIndex }, '*');
+
+                                  // handleVideoTitle([videoData]);
+                                  changeCurrentPlayingVideoTitle(tile, false);
+                                  firstVideoH2 = tile.querySelector('h2');
+                              }
+                          });
+                      }
+                  });
+                  </script>
+
+
+                  <!-- Quiz Carousel -->
+                  <div class="article_bottom_text"></div>
+                  <br>
+                  <div id="video-tab-content">
+                    <script>
+                      var video_api_response = JSON.parse("[]");
+                    </script>
+                  </div>
+                  <div class="d-row content-bw " style="margin-top: 20px;">
+                    <div class="article-pgnavi_prev">
+                      <div class="comment_div" data-title="Comments">
+                        <button class="author_footer_btn" data-gfg-action="loadComments">
+                          <div class="discussion_panel">
+                            <i class="discussion_button">
+                            </i>
+                            Comment
+                          </div>
+                        </button>
+                      </div>
+                      <div class="trigger-div">
+                        <button class="author_footer_btn">
+                          <div class="more_info">More info<span
+                              class="more_info_uparrow gfg-icon gfg-icon_arrow-down-thin"></span>
+                          </div>
+                        </button>
+                      </div>
+                      <a href="https://www.geeksforgeeks.org/about/contact-us/?listicles"
+                         target="_blank" class="advertise-with-us-div">
+                        <button class="advertise-with-us-btn"><span class="advertise-with-us-text">Advertise with us</span>
+                        </button>
+                      </a></div>
+                  </div>
+                  <div class="more-info hidden-div ">
+                    <div class="article-meta-author-details ">
+                      <div class="article-meta-author-details-block">
+                        <div class="article-meta-author-details-profile-display">
+                          <div class="author_info">
+                            <div class="article-meta-author-details-profile-display-icon">
+                              <a href="https://www.geeksforgeeks.org/user/anshul_aggarwal/"
+                                 style="text-decoration: none;">
+                                <div class="image-wrap" style="position: relative"><p
+                                    class="profileCard-profile-picture"
+                                    style="background-color:#B0DAFF;  margin:0px;">A</p>
+                                  <div style="position: absolute;top: -35px; left: -13px;">
+                                    <i class="gfg-badge-icon md scholar"></i>
+                                  </div>
+                                </div>
+                              </a></div>
+                            <div class="article-meta-author-details-profile-display-name">
+                              <a aria-label="author profile"
+                                 href="https://www.geeksforgeeks.org/user/anshul_aggarwal/"
+                                 style="display: block;overflow: hidden;width: 65px;text-decoration: none;text-overflow: ellipsis;color: var(--gfg-title-color);font-weight: bold;white-space: nowrap;">anshul_aggarwal</a>
+                            </div>
+                          </div>
+                          <div class="author_follow_btn">
+                            <div class="article-meta-author-details-follow-button">
+                              <div class="follow-container">
+                                <div class="follow-btn">
+                                  <button id="followAuthor" type="button"
+                                          onclick="followOrUnfollowAuthor()"
+                                          value="anshul_aggarwal">
+                                    <span role="img" aria-label="plus" class="plus-icon"><svg
+                                        viewBox="64 64 896 896" focusable="false" data-icon="plus"
+                                        width="1em" height="1em" fill="currentColor"
+                                        aria-hidden="true"><defs><style></style></defs><path
+                                        d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path
+                                        d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path></svg></span>
+                                    <span>Follow</span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="article_bottom_suggestion_wrapper">
+                        <!-- <div class="article_bottom_suggestion" data-title="Follow">
+                            <a href='https://news.google.com/publications/CAAqBwgKMLTrzwsw44bnAw?hl=en-IN&gl=IN&ceid=IN%3Aen' target="_blank">
+                                <img class="gfg-icon_Gnews no-zoom-in-cursor" src=https://media.geeksforgeeks.org/auth-dashboard-uploads/Google-news.svg  loading="lazy" alt="News"></img>
+                            </a>
+                        </div>  -->
+                        <div pid="1024150" class="article--viewer_like tooltip tooltipBottom"
+                             data-title="Like Article">
+                          <!-- <span class="tooltiptext likeTooltipBottom">Like Article</span> -->
+                          <button id="likeButton" aria-label="like article"
+                                  data-gfg-action="like-article" data-bookmark-value="0"
+                                  data-liked="false"
+                                  style="color: #5B5A5A !important; display: flex; align-items: center; background-color: unset; margin: 0px !important; padding: 5px 0px;">
+                            <i class="author-badge-like-button"></i>
+                            <figure id="likeCount"
+                                    style="margin-left: 3px; margin-top: 4px; color: var(--like-count-color); font-size: 14px; font-weight: 600;"
+                                    class="favoriteText">237
+                            </figure>
+                          </button>
+                        </div>
+
+                        <div class="article_bottom_suggestion" onclick="improveArticleCall()"
+                             data-title="Improve">
+                          <span class="improveTooltipBottom">Improve</span>
+                          <i class="author-badge-improvement-button"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="bottom-wrap" style="margin-top: 12px; margin-bottom: 25px;">
+                      <div class="improved">
+                        <div class="t-head">Article Tags :</div>
+                        <ul>
+
+                          <li style="border-radius: 25px;" class="">
+                            <a href="https://www.geeksforgeeks.org/category/programming-language/java/">Java</a>
+                          </li>
+                          <li style="border-radius: 25px;" class="">
+                            <a href="https://www.geeksforgeeks.org/category/interview-preparation/interview-questions/">Interview
+                              Questions</a>
+                          </li>
+                          <li style="border-radius: 25px;" class="">
+                            <a href="https://www.geeksforgeeks.org/tag/interview-preparation/">interview-preparation</a>
+                          </li>
+                          <li style="border-radius: 25px;" class="">
+                            <a href="https://www.geeksforgeeks.org/tag/java-interview/">Java-Interview</a>
+                          </li>
+                          <li style="border-radius: 25px;display:none;"
+                              class="articles-hidden-tags">
+                            <a href="https://www.geeksforgeeks.org/tag/interview-questions/">Interview-Questions</a>
+                          </li>
+                        </ul>
+                        <button id="showMoreTagsBtn" class="show-more-recommendation-button">+1
+                          More
+                        </button>
+                      </div>
+                      <div class="improved">
+                        <div class="t-head">Practice Tags :</div>
+                        <ul class="practice-tags">
+                          <li><a href="https://www.geeksforgeeks.org/explore?category=Java">Java</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
